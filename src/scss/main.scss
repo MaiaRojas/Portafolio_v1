@@ -1,0 +1,117 @@
+@import "colors" ;
+@import "fonts" ;
+
+html , body{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  background-color: transparent;
+  height: 40px;
+  box-shadow: none;
+}
+.b-a {
+   transition: all .25s;
+   content: "";
+   position: absolute;
+   left: 0;
+   height: 6px;
+   width: 30px;
+   border-radius: 15px;
+}
+.menu-collapsed {
+   transition: all .25s;
+   position: fixed;
+   top: 10px;
+   left: 9px;
+   height: 36px;
+   width: 36px;
+   z-index: 1;
+   cursor: pointer;
+   ul {
+      transition: all 5s;
+      position: fixed;
+      left: -9000px;
+   }
+}
+.bar {
+   @extend .b-a;
+   position: fixed;
+   left: 12px;
+   top: 24px;
+   background-color: $gray-dark;
+   &:before {
+      @extend .b-a;
+      top: -8px;
+      background-color: $gray-dark;
+   }
+   &:after {
+      @extend .b-a;
+      background-color: $gray-dark;
+      top: 8px;
+   }
+}
+.b-a-expanded {
+   transition: all .25s;
+   top: -0px;
+}
+.menu-expanded {
+   transition: all .25s;
+   text-align: center;
+   line-height: 200px;
+   height: 100%;
+   width: 100%;
+   border-radius: 0px;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.85);
+   nav{
+     height: 0px;
+
+     ul {
+        transition: all 0s;
+        position: relative;
+        left: 0;
+        z-index: 2;
+        margin-top: 50px;
+        li{
+          float: none;
+          margin: 3% 0;
+        }
+     }
+     a {
+        font-family: $font-body_secundary ;
+        transition: all .15s;
+        text-decoration: none;
+        font-size: 4em;
+        padding: 5px;
+        color: #fff;
+        display:block;
+        &:hover {
+           font-family: $font-title_base;
+           color: $gray-dark !important;
+           background-color:$gray-light;
+           transition: all .15s;
+           letter-spacing: 2px;
+           color:#333;
+           border: 1px solid $gray-lighter;
+        }
+     }
+   }
+   .bar {
+      background-color: transparent;
+      transition: all .25s;
+      &:before {
+         @extend .b-a-expanded;
+         background-color: $blanco;
+         transform: rotate(45deg);
+      }
+      &:after {
+         @extend .b-a-expanded;
+         background-color: $blanco;
+         transform: rotate(-45deg);
+      }
+   }
+}
+ // Css de Profile

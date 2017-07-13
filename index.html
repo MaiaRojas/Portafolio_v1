@@ -11,8 +11,19 @@
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
-  <nav></nav>
-  <header></header>
+  <header>
+      <div class="menu-collapsed">
+         <div class="bar"></div>
+         <nav>
+            <ul>
+               <li><a href="#">Acerca de mi <i class="icon-heart"></i></a></li>
+               <li><a href="#">Habilidades <i class="icon-bike"></i></a></li>
+               <li><a href="#">Proyectos <i class="icon-tools-2"></i></a></li>
+               <li><a href="#">Contacto <i class="icon-phone"></i></a></li>
+            </ul>
+         </nav>
+      </div>
+  </header>
   <section id="profile"></section>
   <section id="about"></section>
   <section id="proyectos"></section>
@@ -21,45 +32,25 @@
   <footer>
     <div class="container">
             <div class="row">
-                <div class="col s12 m12 x12 xl12">
-                    <span class="copyright">Creado por Maia Rojas Tinco</span>
+                <div class="col s12 m12 x12 xl12 center-align">
+                    <p>Desarrollado por Maia Rojas<i class="icon-lightbulb"></i> </p>
+                    <p>Front-end Developer <i class="icon-gears"></i></p>
                 </div>
-                <div class="col s12 m12  x12 xl12">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="icon-phone"></i>
-                        <li class="icon-calendar"></li>
-                        <li class="icon-gears"></li>
-                        <li class="icon-attachment"></li>
-                        <li class="icon-lightbulb"></li>
-                        <li class="icon-tools-2"></li>
-                        <li class="icon-profile-female"></li>
-                        <li class="icon-bike"></li>
-                        <li class="icon-hotairballoon"></li>
-                        <li class="icon-heart"></li>
-                        <li class="icon-download"></li>
-                        <li class="icon-refresh"></li>
-                        <li class="icon-googleplus"></li>
-                        <li class="icon-rss"></li>
-                        <li class="icon-linkedin"></li>
-                        </a>
-                        </li>
-                        <li><a href="#"><i class="icon-map"></i></a>
-                        </li>
-                        <li><a href="#"><i class="icon-envelope"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col s12 m12 x12 xl12">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+          </div>
+      </div>
   </footer>
+  <div class="fixed-action-btn horizontal click-to-toggle">
+     <a class="btn-floating btn-large red">
+       <i class="icon-profile-female"></i>
+     </a>
+     <ul>
+       <li><a href="https://www.linkedin.com/in/maiarojastinco/" target="_blank"class="btn-floating red"><i class="icon-linkedin"></i></a></li>
+       <li><a href="https://www.linkedin.com/in/maiarojastinco/" target="_blank"  class="btn-floating blue"><i class="icon-github"></i></a></li>
+       <li><a  href="https://www.linkedin.com/in/maiarojastinco/" target="_blank" class="btn-floating yellow"><i class="icon-download"></i></a></li>
+       <li><a  href="https://www.linkedin.com/in/maiarojastinco/" target="_blank" class="btn-floating green"><i class="icon-map"></i></a></li>
+       <li><a class="btn-floating blue"><i class="icon-googleplus"></i></a></li>
+     </ul>
+   </div>
   <script type="text/javascript" src="assets\js\vendor\jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="assets\js\vendor\materialize.min.js"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
