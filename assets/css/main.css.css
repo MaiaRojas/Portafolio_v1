@@ -1,0 +1,90 @@
+
+body, html {
+	background-color: #EDEDED !important;
+	font-family: "Roboto", sans-serif;
+}
+*{
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+/*Header*/
+header{
+	background-image: url(../img/bg.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
+h1{
+	width: 100%;
+	font-weight: bold;
+}
+/*About me*/
+.about-title{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.mt{
+	margin-top: 100px;
+}
+.padding-bottom{
+	margin-bottom: 100px;
+}
+.circle{
+	width: 25%;
+	height: 25%;
+}
+.upper{
+	text-transform: uppercase;
+}
+
+/*Portfolio*/
+#portafolio{
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+}
+.cont-img{
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+.materialboxed{
+	width: 100%;
+}
+hr{
+	width: 5%;
+	margin-top: 2%;
+	margin-bottom: 7%;
+}
+.row{
+	margin: 0;
+}
+.p-row{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/*Contact*/
+.input-field{
+	margin-bottom: 1rem;
+}
+.button{
+	margin-bottom: 2rem;
+}
+.pb{
+	padding-bottom: 23px;
+}
+#information {
+	padding-left: 40px;
+	padding-top: 36px;
+}
+/*Footer*/
+footer div h6{
+	display: inline-block;
+}
+footer{
+	width: 100%;
+	overflow: auto;
+	padding: 5px 0;
+}
