@@ -66,7 +66,7 @@ nav {
       margin-top: 50px; }
       .menu-expanded nav ul li {
         float: none;
-        margin: 3% 0; }
+        margin: 1% 0; }
     .menu-expanded nav a {
       font-family: "Cardo", serif;
       transition: all .15s;
@@ -92,5 +92,21 @@ nav {
     .menu-expanded .bar:after {
       background-color: #BFC4CE;
       transform: rotate(-45deg); }
+
+#profile {
+  background: url(../img/img_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  background-color: #91D4DA;
+  height: 100vh; }
+
+.btn-floating i {
+  background-color: #206776;
+  color: #CEE1E6; }
+  .btn-floating i:hover {
+    color: #18374C;
+    background-color: #91D4DA; }
 
 /*# sourceMappingURL=main.css.map */

@@ -77,7 +77,7 @@ nav{
         margin-top: 50px;
         li{
           float: none;
-          margin: 3% 0;
+          margin: 1% 0;
         }
      }
      a {
@@ -115,3 +115,23 @@ nav{
    }
 }
  // Css de Profile
+ #profile{
+  background: url(../img/img_1.jpg);
+  // background: url(../img/musica.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  background-color: $gray-light;
+  height: 100vh;
+}
+ // Css de iconos
+ .btn-floating i {
+   background-color:$gray-dark;
+   color: $gray-lighter;
+   &:hover {
+   color: $gray-darker ;
+   background-color: $gray-light;
+   }
+ }
+ //
