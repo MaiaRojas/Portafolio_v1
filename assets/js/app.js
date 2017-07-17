@@ -32,7 +32,7 @@ $('#modal3').modal({
       outDuration: 200, // Transition out duration
     });
 
-
+   $('.parallax').parallax();
    $(".menu-collapsed").click(function() {
      $(this).toggleClass("menu-expanded");
      $('.redes').toggleClass("hide");

@@ -29,28 +29,39 @@
     <div class="overley">
       <div class="container">
           <div class="intro-text">
-              <div class="intro-lead-in col s12 m12 l12 xl12">Bienvenido a mi Portafolio!</div>
-              <div class="intro-heading col s12 m12 l12 xl12">
-                <div class="content">
-                    <div class="content__container">
-                      <p class="content__container__text">Maia is </p>
-                      <ul class="content__container__list">
-                        <li class="content__container__list__item">Increible !</li>
-                        <li class="content__container__list__item">Autodicta !</li>
-                        <li class="content__container__list__item">Buena vibra !</li>
-                        <li class="content__container__list__item">Coder !</li>
-                      </ul>
-                    </div>
-                  </div>
+              <div class="intro-lead-in col s12 m12 l12 xl12">
+                <svg viewBox="0 0 800 600">
+                  <symbol id="s-text">
+                    <text text-anchor="middle" x="50%" y="35%" class="text--line">
+                      Maia
+                    </text>
+                    <text text-anchor="middle"  x="50%"  y="68%" class="text--line2">
+                      Rojas
+                    </text>
+                  </symbol>
+                  <g class="g-ants">
+                    <use xlink:href="#s-text"
+                      class="text-copy"></use>
+                    <use xlink:href="#s-text"
+                      class="text-copy"></use>
+                    <use xlink:href="#s-text"
+                      class="text-copy"></use>
+                    <use xlink:href="#s-text"
+                      class="text-copy"></use>
+                    <use xlink:href="#s-text"
+                      class="text-copy"></use>
+                  </g>
+                </svg>
               </div>
-              <a href="#about" class="btn btn-floating pulse"><i class="material-icons icon-hotairballoon"></i></a>
+              <div class="intro-heading col s12 m12 l12 xl12"></div>
+              <a href="#about" class="btn btn-floating pulse"><i>&#x2193;</i></a>
           </div>
       </div>
     </div>
   </section>
   <section id="about">
     <div class="who center-align">
-			<h2 class="title_principal">WHO?</h2>
+			<h2>WHO?</h2>
       <div class="circle">
         <img src="assets/img/maia.jpg"  alt="Maia Rojas ">
       </div>
@@ -68,58 +79,62 @@
 		</div>
   </section>
   <section id="skills">
-    <div class="container">
-        <div class="row">
+      <div class="parallax-container">
+          <div class="parallax">
+            <div class="overley">
+              <div class="row">
                 <div class="col l12 center-align">
-                    <h2 class="title_principal">SKILLS</h2>
+                    <h2>SKILLS</h2>
                     <h6 class="subtitle_principal">Front-End Developers</h6>
                     <span class="space">&#x2212;</span><br>
                     <h5 class="subtitle_principal">Expone la data y habilita las funcionalidades que un site necesite, interactuando mucho con las UIDev. Usan catálogos de servicio para extraer data de bases de datos de terceros.</h5>
                 </div>
             </div>
-          <div class="row center-align">
-              <div class="col m6">
-                <h4 class="subtitle_principal">Tech Skills</h4>
-                <ul class="collapsible" data-collapsible="expandable">
-                  <li>
-                    <div class="collapsible-header"><i class="material-icons"></i>JQUERY, AJAX, PROMISES Y APIS</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                  </li>
-                  <li>
-                    <div class="collapsible-header"><i class="material-icons"></i>RESPONSIVE AND CSS FRAMEWORKS</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                  </li>
-                  <li>
-                    <div class="collapsible-header"><i class="icon-phone"></i>CSS E INTERACCIONES</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                  </li>
-                </ul>
-              </div>
-              <div class="col m6">
-                <h4 class="subtitle_principal">Life Skills</h4>
-                <ul class="collapsible" data-collapsible="expandable">
-                  <li>
-                    <div class="collapsible-header"><i class="material-icons"></i>HABILIDADES DE COMUNICACIÓN</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                  </li>
-                  <li>
-                    <div class="collapsible-header"><i class="material-icons"></i>FLEXIBILIDAD Y ADAPTABILIDAD</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                  </li>
-                  <li>
-                    <div class="collapsible-header"><i class="icon-phone"></i>TRABAJO EN EQUIPO</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                  </li>
-                </ul>
+              <div class="row center-align">
+                  <div class="col m6">
+                    <h4 class="subtitle_principal">Tech Skills</h4>
+                    <ul class="collapsible" data-collapsible="expandable">
+                      <li>
+                        <div class="collapsible-header"><i class="material-icons"></i>JQUERY, AJAX, PROMISES Y APIS</div>
+                        <div class="collapsible-body"><p>Jquery es un herramienta</p></div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header"><i class="material-icons"></i>RESPONSIVE AND CSS FRAMEWORKS</div>
+                        <div class="collapsible-body"><p>Los diseños </p></div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header"><i class="icon-phone"></i>CSS E INTERACCIONES</div>
+                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col m6">
+                    <h4 class="subtitle_principal">Life Skills</h4>
+                    <ul class="collapsible" data-collapsible="expandable">
+                      <li>
+                        <div class="collapsible-header"><i class="material-icons"></i>HABILIDADES DE COMUNICACIÓN</div>
+                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header"><i class="material-icons"></i>FLEXIBILIDAD Y ADAPTABILIDAD</div>
+                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header"><i class="icon-phone"></i>TRABAJO EN EQUIPO</div>
+                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                      </li>
+                    </ul>
+                  </div>
               </div>
           </div>
-    </div>
+        </div>
+      </div>
   </section>
   <section id="work">
     <div class="container">
             <div class="row">
                 <div class="col  s12  m12 l12 center-align">
-                    <h2 class="section-heading title_principal">WORK</h2>
+                    <h2>WORK</h2>
                     <h4 class="section-subheading text-muted subtitle_principal">Mis Trabajos a lo largo de Laboratoria...!!!</h4>
                 </div>
             </div>
@@ -127,12 +142,14 @@
               <a href="#modal1" class="portfolio-link" data-toggle="modal">
                 <div id="show-hover" class="col s12 m4 l4">
                   <div class="gasfinger img-flex">
-                    <h4>Gas Finger</h4>
-                    <p class="text-muted font_principal">Aplicación móvil </p>
-                    <div class="text-icons">
-                      <span class="icon-html-five"></span>
-                      <span class="icon-css3"></span>
-                      <span>simple grid</span>
+                    <div class="overley">
+                      <h4>Gas Finger</h4>
+                      <p class="text-muted font_principal">Aplicación móvil </p>
+                      <div class="text-icons">
+                        <span class="icon-html-five"></span>
+                        <span class="icon-css3"></span>
+                        <span>simple grid</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -140,12 +157,14 @@
               <a href="#modal2" class="portfolio-link" data-toggle="modal">
                 <div id="show-hover" class="col s12 m4 l4">
                   <div class="yape img-flex">
-                    <h4>Yape</h4>
-                    <p class="text-muted font_principal">Aplicación móvil </p>
-                    <div class="text-icons">
-                      <span class="icon-html-five"></span>
-                      <span class="icon-css3"></span>
-                      <span>simple grid</span>
+                    <div class="overley">
+                      <h4>Yape</h4>
+                      <p class="text-muted font_principal">Aplicación móvil </p>
+                      <div class="text-icons">
+                        <span class="icon-html-five"></span>
+                        <span class="icon-css3"></span>
+                        <span>simple grid</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -153,12 +172,14 @@
               <a href="#modal3" class="portfolio-link" data-toggle="modal">
                 <div id="show-hover" class="col s12 m4 l4">
                   <div class="labcar img-flex">
-                    <h4>LabCar</h4>
-                    <p class="text-muted font_principal">Aplicación móvil </p>
-                    <div class="text-icons">
-                      <span class="icon-html-five"></span>
-                      <span class="icon-css3"></span>
-                      <span>mejorar</span>
+                    <div class="overley">
+                      <h4>LabCar</h4>
+                      <p class="text-muted font_principal">Aplicación móvil </p>
+                      <div class="text-icons">
+                        <span class="icon-html-five"></span>
+                        <span class="icon-css3"></span>
+                        <span>mejorar</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -166,12 +187,14 @@
               <a href="#modal4" class="portfolio-link" data-toggle="modal">
                 <div id="show-hover" class="col s12 m4 l4">
                   <div class="lyft img-flex">
-                    <h4>Lyft</h4>
-                    <p class="text-muted font_principal">Página Web </p>
-                    <div class="text-icons">
-                      <span class="icon-html-five"></span>
-                      <span class="icon-css3"></span>
-                      <span>simple grid</span>
+                    <div class="overley">
+                      <h4>Lyft</h4>
+                      <p class="text-muted font_principal">Página Web </p>
+                      <div class="text-icons">
+                        <span class="icon-html-five"></span>
+                        <span class="icon-css3"></span>
+                        <span></span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -179,12 +202,14 @@
               <a href="#modal5" class="portfolio-link" data-toggle="modal">
                 <div id="show-hover" class="col s12 m4 l4">
                   <div class="news img-flex">
-                    <h4>Laboratoria News</h4>
-                    <p class="text-muted font_principal">Página Web </p>
-                    <div class="text-icons">
-                      <span class="icon-html-five"></span>
-                      <span class="icon-css3"></span>
-                      <span>simple grid</span>
+                    <div class="overley">
+                      <h4>Laboratoria News</h4>
+                      <p class="text-muted font_principal">Página Web </p>
+                      <div class="text-icons">
+                        <span class="icon-html-five"></span>
+                        <span class="icon-css3"></span>
+                        <span></span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -192,12 +217,14 @@
               <a href="#modal6" class="portfolio-link" data-toggle="modal">
                 <div id="show-hover" class="col s12 m4 l4">
                   <div class="proyectx img-flex">
-                    <h4 class="subtitle_principal">Proyecto x</h4>
-                    <p class="text-muted font_principal">Página Web </p>
-                    <div class="text-icons">
-                      <span class="icon-html-five"></span>
-                      <span class="icon-css3"></span>
-                      <span>fusion</span>
+                    <div class="overley">
+                      <h4 class="subtitle_principal">Proyecto x</h4>
+                      <p class="text-muted font_principal">Página Web </p>
+                      <div class="text-icons">
+                        <span class="icon-html-five"></span>
+                        <span class="icon-css3"></span>
+                        <span>fusion</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -208,7 +235,7 @@
   <section id="contact">
     <div class="row">
         <div class="col s12 m12 l12 xl12 center-align">
-            <h2 class="section-heading title_principal">CONTACT</h2>
+            <h2>CONTACT</h2>
         </div>
         <div class="col s12 m12 l12 xl12 center-align font_principal">
           <span class="icon-minus">-</span><br>
