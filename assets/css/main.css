@@ -172,31 +172,34 @@ nav {
   margin-top: 3%;
   height: 100vh; }
   #skills div.parallax-container {
-    height: 100%; }
-  #skills div.parallax {
-    background-image: url("../img/musica.jpg");
     height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; }
+    width: 100%; }
+    #skills div.parallax-container div.parallax {
+      background-image: url("../img/musica.jpg");
+      height: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 0; }
+      #skills div.parallax-container div.parallax div.row div.collapsible-header {
+        font-family: "Josefin Slab", serif;
+        color: #CEE1E6;
+        background-color: #18374C;
+        border: 1px solid;
+        border-radius: 5px; }
+        #skills div.parallax-container div.parallax div.row div.collapsible-header:hover {
+          background-color: #CEE1E6;
+          color: #18374C; }
+      #skills div.parallax-container div.parallax div.row div.collapsible-body {
+        font-family: "Josefin Sans", sans-serif;
+        padding: 1rem;
+        color: #CEE1E6;
+        border: 1px solid #206776;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.7); }
   #skills h2, #skills span, #skills h5, #skills h6, #skills h4 {
     color: #CEE1E6; }
-  #skills div.row div.collapsible-header {
-    font-family: "Josefin Slab", serif;
-    color: #CEE1E6;
-    background-color: #18374C;
-    border: 1px solid;
-    border-radius: 5px; }
-    #skills div.row div.collapsible-header:hover {
-      background-color: #CEE1E6;
-      color: #18374C; }
-  #skills div.row div.collapsible-body {
-    font-family: "Josefin Sans", sans-serif;
-    padding: 1rem;
-    color: #206776;
-    border: 1px solid #206776;
-    border-radius: 5px; }
 
 #work h2 {
   color: #206776; }
