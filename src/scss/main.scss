@@ -6,12 +6,24 @@ html , body{
   padding: 0;
   // background: hsl(200,70,11);
   background-size: .12em 50%;
-  // font: 6em/1 Arial;
+  font-size: 18px;
 }
 h2{
   font-family: $font-anuncio;
+  font-size: 2.8em;
 }
-
+h3{
+  font-size: 2.4em;
+}
+h4{
+  font-size: 1.9em;
+}
+h5{
+  font-size: 1.6em;
+}
+p{
+  font-size: 1.2em;
+}
 .img-responsive{
   width: 100%;
   height: auto;
@@ -40,7 +52,7 @@ h2{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.7);
 }
 nav{
   background-color: transparent;
@@ -203,15 +215,13 @@ nav{
     color: $gray-darker;
   }
   p{
-    font-size: 18px;
     color: $gray-darker;
   }
  }
 // Css para Skill
 #skills{
   margin-top: 3%;
-  height: 100vh;
-
+  height: 120vh;
   div.parallax-container{
     height: 100%;
     width: 100%;
@@ -225,12 +235,12 @@ nav{
       z-index: 0;
       div.row{
         div.collapsible-header{
-          font-family: $font-title_secundary;
+           font-family: $font-body_base;
            color: $gray-lighter;
-         background-color: $gray-darker;
-         border: 1px solid ;
-         border-radius: 5px;
-         &:hover {
+           background-color: $gray-darker;
+           border: 1px solid ;
+           border-radius: 5px;
+           &:hover {
            background-color: $gray-lighter;
            color: $gray-darker;
          }
@@ -297,11 +307,32 @@ nav{
   }
 }
 #contact{
+  height: 70vh;
+  color: $gray-lighter;
   h2{
-    color:$gray-dark;
+    color:$gray-lighter;;
+  }
+  div.parallax-container{
+    height: 100%;
+    width: 100%;
+    div.parallax{
+      background-image: url("../img/img_2.jpg");
+      height: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 0;
+    }
   }
 }
-
+footer{
+  background-color: $gray-darker;
+  color: $gray-lighter;
+  div.row{
+    margin-bottom: 0px;
+  }
+}
 //Css para modal
 .modal-overlay{
   background: $gray-darker !important;
@@ -394,6 +425,9 @@ $stroke-step: 7%;
 
 // Media
 @media (max-width:600px) {
+  html,body{
+    font-size: 14px;
+  }
   .menu-expanded{
     nav{
       line-height: 3;
@@ -401,5 +435,11 @@ $stroke-step: 7%;
         font-size: 2.5rem;
       }
     }
+  }
+  #skills{
+    height: 120vh;
+  }
+  #contact{
+    height: 40vh;
   }
 }
