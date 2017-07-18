@@ -184,13 +184,12 @@ nav {
   #about h4 {
     color: #18374C; }
   #about p {
-    color: #18374C;
-    text-align: justify; }
+    color: #18374C; }
 
 #skills {
   position: relative;
   margin-top: 3%;
-  height: 700px; }
+  height: 750px; }
   #skills div.parallax-container {
     height: 100%;
     width: 100%; }
@@ -218,8 +217,6 @@ nav {
         border: 1px solid #206776;
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0.7); }
-        #skills div.parallax-container div.parallax div.row div.collapsible-body p {
-          margin: 0; }
   #skills h2, #skills span, #skills h5, #skills h6, #skills h4 {
     color: #CEE1E6; }
 
@@ -346,8 +343,6 @@ div.modal {
   .btn-floating i:hover {
     color: #18374C;
     background-color: #91D4DA; }
-  .btn-floating i .tooltipped {
-    color: #91D4DA; }
 
 .text--line {
   font-size: .5em; }
@@ -362,7 +357,7 @@ svg {
   stroke: white;
   stroke-dasharray: 10% 40%;
   stroke-width: 3px;
-  animation: stroke-offset 8s infinite linear; }
+  animation: stroke-offset 6s infinite linear; }
   .text-copy:nth-child(1) {
     stroke: #18374C;
     stroke-dashoffset: 10%; }
@@ -381,7 +376,8 @@ svg {
 
 @keyframes stroke-offset {
   50% {
-    stroke-dashoffset: 50%; } }
+    stroke-dashoffset: 50%;
+    stroke-dasharray: 0 125%; } }
 @media (max-width: 600px) {
   html, body {
     font-size: 14px; }
@@ -395,22 +391,12 @@ svg {
       font-size: 2.5rem; }
 
   #skills {
-    min-height: 1000px; }
-    #skills h5 {
-      text-align: justify; }
+    height: 140vh; }
     #skills div.collapsible-header {
       font-size: 0.8em; }
     #skills i {
       display: none; }
     #skills p {
-      font-size: 1em; }
-
-  #modal1, #modal2, #modal3, #modal4, #modal5, #modal6 {
-    width: 80%; }
-    #modal1 .btn, #modal2 .btn, #modal3 .btn, #modal4 .btn, #modal5 .btn, #modal6 .btn {
-      font-size: 0.8rem;
-      margin: 2%; }
-      #modal1 .btn i, #modal2 .btn i, #modal3 .btn i, #modal4 .btn i, #modal5 .btn i, #modal6 .btn i {
-        font-size: 0.8rem; } }
+      font-size: 1em; } }
 
 /*# sourceMappingURL=main.css.map */
