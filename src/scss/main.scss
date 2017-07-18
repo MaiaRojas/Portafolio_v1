@@ -111,10 +111,11 @@ nav{
    top: -0px;
 }
 .menu-expanded {
+   padding: 6%;
    z-index: 10;
    transition: all .25s;
    text-align: center;
-   line-height: 200px;
+   line-height: 180px;
    height: 100%;
    width: 100%;
    border-radius: 0px;
@@ -135,6 +136,7 @@ nav{
           i{
             display: inline-block;
             margin-right: 1%;
+            font-size: 40px;
           }
         }
      }
@@ -142,7 +144,7 @@ nav{
         font-family: $font-anuncio;
         transition: all .15s;
         text-decoration: none;
-        font-size: 5em;
+        font-size: 3.5em;
         padding: 5px;
         color: #fff;
         display:block;
@@ -182,8 +184,6 @@ nav{
     height: 100%;
     color: $gray-lighter;
     font-size:   4em;
-    // font-family: 'Fredericka the Great', cursive;
-    //font-family: $font-title_base;
     font-family: $font-title_secundary;
     div.intro-text{
       height: 100%;
@@ -199,23 +199,11 @@ nav{
   }
  }
 //Css para About
-#about{
-   padding: 3% 0;
-   div.who{
-     h2{
-      color:$gray-dark;
-     }
-     div.circle{
-       img{
-         border: 3px solid $gray-darker;
-         height: 130px;
-         width: 130px;
-         border-radius: 50%;
-         height: auto;
-         overflow: auto;
-       }
-     }
-   }
+ #about{
+   padding: 60px 0;
+  h2{
+    color:$gray-dark;
+  }
   h4{
     color: $gray-darker;
   }
@@ -225,57 +213,51 @@ nav{
   }
  }
 // Css para Skill
-#skills{
-  position: relative;
-  margin-top: 3%;
-  height: 700px;
-  div.parallax-container{
+ #skills{
+    background-image: url("../img/musica.jpg");
     height: 100%;
-    width: 100%;
-    div.parallax{
-      background-image: url("../img/musica.jpg");
-      height: 100%;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: 0;
-      div.row{
-        div.collapsible-header{
-           font-family: $font-body_base;
-           color: $gray-lighter;
-           background-color: $gray-darker;
-           border: 1px solid ;
-           border-radius: 5px;
-           &:hover {
-           background-color: $gray-lighter;
-           color: $gray-darker;
-         }
-      }
-      div.collapsible-body{
-        font-family: $font-body_base ;
-        padding: 0.2rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2 ,span,h5,h6 ,h4,p{
         color:$gray-lighter;
-        border: 1px solid $gray-dark;
-        border-radius: 5px;
-        background-color:rgba(0,0,0,0.7);
-        p{
-          margin: 0;
-        }
-      }
     }
-  }
-}
-  h2 ,span,h5,h6 ,h4{
-    color:$gray-lighter;
-  }
-}
+   div.bg-opacity-skills{
+     padding: 60px 0;
+     background-color: rgba(0,0,0,0.7);
+     div.row{
+       margin: 0;
+       div.collapsible-header{
+             font-family: $font-body_base;
+             color: $gray-lighter;
+             background-color: $gray-darker;
+             border: 1px solid ;
+             border-radius: 5px;
+             &:hover {
+             background-color: $gray-lighter;
+             color: $gray-darker;
+           }
+        }
+        div.collapsible-body{
+          font-family: $font-body_base ;
+          padding: 0.5rem;
+          color:$gray-lighter;
+          border: 1px solid $gray-dark;
+          border-radius: 5px;
+          background-color:rgba(0,0,0,0.7);
+        }
+     }
+   }
+ }
 //Css para Work
 #work{
-  padding: 5% 0;
-
+  padding: 60px 0;
   h2{
     color:$gray-dark;
+  }
+  h4{
+    color:$gray-darker;
   }
   div.works{
     a.portfolio-link{
@@ -344,29 +326,29 @@ nav{
   }
 }
 #contact{
-  height: 350px;
-  color: $gray-lighter;
-  h2{
-    color:$gray-lighter;;
+  background-image: url("../img/img_2.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h2 ,span,h5,h6 ,h4,p{
+      color:$gray-lighter;
   }
-  div.parallax-container{
-    height: 100%;
-    width: 100%;
-    div.parallax{
-      background-image: url("../img/img_2.jpg");
-      height: 100%;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: 0;
+  div.bg-opacity-contact{
+    padding: 60px 0;
+    background-color: rgba(0,0,0,0.7);
+    div.row{
+      margin: 0;
       div.font_principal{
         span{
           font-size: 1.2rem;
+          margin-left: 5px;
         }
       }
       div.cv-button{
         a{
+          margin: 10px;
            background-color: white;
            border-radius: 20px;
            color: $gray-dark;
@@ -385,8 +367,8 @@ footer{
   div.row{
     margin-bottom: 0px;
     p{
-      font-size: 0.8rem;
-      margin: 0;
+      font-size: 0.9rem;
+       margin: 0.5em;
     }
   }
 }
@@ -438,16 +420,18 @@ footer{
  .btn-floating i {
    background-color:$gray-dark;
    color: $gray-lighter;
+   font-size: 1.4rem;
    &:hover {
    color: $gray-darker ;
    background-color: $gray-light;
    }
-   .tooltipped{
-    color: $gray-light ;
 
-   }
  }
-
+ .material-tooltip{
+   font-family: $font-body_base;
+   border-radius:11px;
+   color:$gray-lighter;
+ }
 
 //Css para Maia Rojas
 $colors: $gray-darker ,$gray-dark ,$gray,$gray-light, $gray-lighter;
@@ -492,6 +476,15 @@ $stroke-step: 10%;
   html,body{
     font-size: 14px;
   }
+  header{
+    div.menu-expanded{
+      a{
+        i{
+          font-size: 22px;
+        }
+      }
+    }
+  }
   #profile{
     svg{
       width: 85%;
@@ -506,7 +499,6 @@ $stroke-step: 10%;
     }
   }
   #skills{
-    min-height: 1000px;
     h5{
       text-align: justify;
     }

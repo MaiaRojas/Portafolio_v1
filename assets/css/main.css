@@ -101,10 +101,11 @@ nav {
   top: -0px; }
 
 .menu-expanded {
+  padding: 6%;
   z-index: 10;
   transition: all .25s;
   text-align: center;
-  line-height: 200px;
+  line-height: 180px;
   height: 100%;
   width: 100%;
   border-radius: 0px;
@@ -124,12 +125,13 @@ nav {
         margin: 1% 0; }
         .menu-expanded nav ul li i {
           display: inline-block;
-          margin-right: 1%; }
+          margin-right: 1%;
+          font-size: 40px; }
     .menu-expanded nav a {
       font-family: "Fredericka the Great", cursive;
       transition: all .15s;
       text-decoration: none;
-      font-size: 5em;
+      font-size: 3.5em;
       padding: 5px;
       color: #fff;
       display: block; }
@@ -171,59 +173,52 @@ nav {
         border-radius: 50%; }
 
 #about {
-  padding: 3% 0; }
-  #about div.who h2 {
+  padding: 60px 0; }
+  #about h2 {
     color: #206776; }
-  #about div.who div.circle img {
-    border: 3px solid #18374C;
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    height: auto;
-    overflow: auto; }
   #about h4 {
     color: #18374C; }
   #about p {
-    color: #18374C; }
+    color: #18374C;
+    text-align: justify; }
 
 #skills {
-  position: relative;
-  margin-top: 3%;
-  height: 750px; }
-  #skills div.parallax-container {
-    height: 100%;
-    width: 100%; }
-    #skills div.parallax-container div.parallax {
-      background-image: url("../img/musica.jpg");
-      height: 100%;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: 0; }
-      #skills div.parallax-container div.parallax div.row div.collapsible-header {
+  background-image: url("../img/musica.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #skills h2, #skills span, #skills h5, #skills h6, #skills h4, #skills p {
+    color: #CEE1E6; }
+  #skills div.bg-opacity-skills {
+    padding: 60px 0;
+    background-color: rgba(0, 0, 0, 0.7); }
+    #skills div.bg-opacity-skills div.row {
+      margin: 0; }
+      #skills div.bg-opacity-skills div.row div.collapsible-header {
         font-family: "Josefin Sans", sans-serif;
         color: #CEE1E6;
         background-color: #18374C;
         border: 1px solid;
         border-radius: 5px; }
-        #skills div.parallax-container div.parallax div.row div.collapsible-header:hover {
+        #skills div.bg-opacity-skills div.row div.collapsible-header:hover {
           background-color: #CEE1E6;
           color: #18374C; }
-      #skills div.parallax-container div.parallax div.row div.collapsible-body {
+      #skills div.bg-opacity-skills div.row div.collapsible-body {
         font-family: "Josefin Sans", sans-serif;
-        padding: 0.2rem;
+        padding: 0.5rem;
         color: #CEE1E6;
         border: 1px solid #206776;
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0.7); }
-  #skills h2, #skills span, #skills h5, #skills h6, #skills h4 {
-    color: #CEE1E6; }
 
 #work {
-  padding: 5% 0; }
+  padding: 60px 0; }
   #work h2 {
     color: #206776; }
+  #work h4 {
+    color: #18374C; }
   #work div.works a.portfolio-link div#show-hover {
     padding: 0;
     height: 300px;
@@ -272,28 +267,28 @@ nav {
       background-color: rgba(0, 0, 0, 0.7); }
 
 #contact {
-  height: 350px;
-  color: #CEE1E6; }
-  #contact h2 {
+  background-image: url("../img/img_2.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #contact h2, #contact span, #contact h5, #contact h6, #contact h4, #contact p {
     color: #CEE1E6; }
-  #contact div.parallax-container {
-    height: 100%;
-    width: 100%; }
-    #contact div.parallax-container div.parallax {
-      background-image: url("../img/img_2.jpg");
-      height: 100%;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: 0; }
-      #contact div.parallax-container div.parallax div.font_principal span {
-        font-size: 1.2rem; }
-      #contact div.parallax-container div.parallax div.cv-button a {
+  #contact div.bg-opacity-contact {
+    padding: 60px 0;
+    background-color: rgba(0, 0, 0, 0.7); }
+    #contact div.bg-opacity-contact div.row {
+      margin: 0; }
+      #contact div.bg-opacity-contact div.row div.font_principal span {
+        font-size: 1.2rem;
+        margin-left: 5px; }
+      #contact div.bg-opacity-contact div.row div.cv-button a {
+        margin: 10px;
         background-color: white;
         border-radius: 20px;
         color: #206776; }
-        #contact div.parallax-container div.parallax div.cv-button a:hover {
+        #contact div.bg-opacity-contact div.row div.cv-button a:hover {
           background-color: #206776;
           color: #CEE1E6; }
 
@@ -303,8 +298,8 @@ footer {
   footer div.row {
     margin-bottom: 0px; }
     footer div.row p {
-      font-size: 0.8rem;
-      margin: 0; }
+      font-size: 0.9rem;
+      margin: 0.5em; }
 
 .modal-overlay {
   background: #18374C !important;
@@ -339,10 +334,16 @@ div.modal {
 
 .btn-floating i {
   background-color: #206776;
-  color: #CEE1E6; }
+  color: #CEE1E6;
+  font-size: 1.4rem; }
   .btn-floating i:hover {
     color: #18374C;
     background-color: #91D4DA; }
+
+.material-tooltip {
+  font-family: "Josefin Sans", sans-serif;
+  border-radius: 11px;
+  color: #CEE1E6; }
 
 .text--line {
   font-size: .5em; }
@@ -357,7 +358,7 @@ svg {
   stroke: white;
   stroke-dasharray: 10% 40%;
   stroke-width: 3px;
-  animation: stroke-offset 6s infinite linear; }
+  animation: stroke-offset 8s infinite linear; }
   .text-copy:nth-child(1) {
     stroke: #18374C;
     stroke-dashoffset: 10%; }
@@ -376,11 +377,13 @@ svg {
 
 @keyframes stroke-offset {
   50% {
-    stroke-dashoffset: 50%;
-    stroke-dasharray: 0 125%; } }
+    stroke-dashoffset: 50%; } }
 @media (max-width: 600px) {
   html, body {
     font-size: 14px; }
+
+  header div.menu-expanded a i {
+    font-size: 22px; }
 
   #profile svg {
     width: 85%; }
@@ -390,13 +393,21 @@ svg {
     .menu-expanded nav a {
       font-size: 2.5rem; }
 
-  #skills {
-    height: 140vh; }
-    #skills div.collapsible-header {
-      font-size: 0.8em; }
-    #skills i {
-      display: none; }
-    #skills p {
-      font-size: 1em; } }
+  #skills h5 {
+    text-align: justify; }
+  #skills div.collapsible-header {
+    font-size: 0.8em; }
+  #skills i {
+    display: none; }
+  #skills p {
+    font-size: 1em; }
+
+  #modal1, #modal2, #modal3, #modal4, #modal5, #modal6 {
+    width: 80%; }
+    #modal1 .btn, #modal2 .btn, #modal3 .btn, #modal4 .btn, #modal5 .btn, #modal6 .btn {
+      font-size: 0.8rem;
+      margin: 2%; }
+      #modal1 .btn i, #modal2 .btn i, #modal3 .btn i, #modal4 .btn i, #modal5 .btn i, #modal6 .btn i {
+        font-size: 0.8rem; } }
 
 /*# sourceMappingURL=main.css.map */
