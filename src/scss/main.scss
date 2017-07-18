@@ -60,6 +60,9 @@ p{
   align-items: center;
   justify-content: center;
 }
+.text-justify{
+  text-align: justify;
+}
 nav{
   background-color: transparent;
   height: 40px;
@@ -251,22 +254,17 @@ nav{
    }
  }
 //Css para Work
-#work{
+ #work{
   padding: 60px 0;
   h2{
     color:$gray-dark;
   }
-  h4{
-    color:$gray-darker;
-  }
   div.works{
     a.portfolio-link{
-
       div#show-hover{
          padding: 0;
          height: 300px;
          overflow: hidden;
-
         h4{
           font-family: $font-anuncio;
         }
@@ -300,28 +298,27 @@ nav{
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
-
   &:hover{
-    -webkit-transition: all 200ms ease-in;
+    -webkit-transition: all 300ms ease-in;
     -webkit-transform: scale(1.2);
-    -ms-transition: all 200ms ease-in;
+    -ms-transition: all 300ms ease-in;
     -ms-transform: scale(1.2);
-    -moz-transition: all 200ms ease-in;
+    -moz-transition: all 300ms ease-in;
     -moz-transform: scale(1.2);
-    transition: all 200ms ease-in;
+    transition: all 300ms ease-in;
     transform: scale(1.2);
   }
   div.overley{
-    color: transparent;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0) ;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    color: transparent;
     &:hover{
-      color: $gray-lighter;
-      background-color: rgba(0,0,0,0.7);
+      color: white;
+      background-color: rgba(32,103,118,0.9);;
+
     }
   }
 }
@@ -394,20 +391,17 @@ footer{
     }
    }
    div.modal-content{
-
+     padding: 0 20px;
      h4{
        color:$gray-darker;
      }
-
-   }
-   div.modal-footer{
-     border: none !important;
-     display: flex;
-     justify-content: center;
      a{
+       font-family: $font-body_base;
        border-radius: 20px;
        background-color: $gray-dark;
        color: $gray-lighter;
+       font-size: 0.8rem;
+       margin-left: 10px;
        &:hover{
          color: $gray-darker ;
          background-color: $gray-light;
@@ -499,9 +493,6 @@ $stroke-step: 10%;
     }
   }
   #skills{
-    h5{
-      text-align: justify;
-    }
     div.collapsible-header {
       font-size: 0.8em;
     }
@@ -512,8 +503,9 @@ $stroke-step: 10%;
       font-size: 1em;
     }
   }
-  #modal1,#modal2 , #modal3, #modal4, #modal5 , #modal6{
+  #modal1 , #modal2 , #modal3, #modal4, #modal5 , #modal6{
     width: 80%;
+    max-height: 55% ;
     .btn{
       font-size: 0.8rem;
       margin: 2%;

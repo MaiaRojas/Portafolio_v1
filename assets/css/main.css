@@ -56,6 +56,9 @@ p {
   align-items: center;
   justify-content: center; }
 
+.text-justify {
+  text-align: justify; }
+
 nav {
   background-color: transparent;
   height: 40px;
@@ -217,8 +220,6 @@ nav {
   padding: 60px 0; }
   #work h2 {
     color: #206776; }
-  #work h4 {
-    color: #18374C; }
   #work div.works a.portfolio-link div#show-hover {
     padding: 0;
     height: 300px;
@@ -247,24 +248,24 @@ nav {
   background-repeat: no-repeat;
   height: 300px; }
   .img-flex:hover {
-    -webkit-transition: all 200ms ease-in;
+    -webkit-transition: all 300ms ease-in;
     -webkit-transform: scale(1.2);
-    -ms-transition: all 200ms ease-in;
+    -ms-transition: all 300ms ease-in;
     -ms-transform: scale(1.2);
-    -moz-transition: all 200ms ease-in;
+    -moz-transition: all 300ms ease-in;
     -moz-transform: scale(1.2);
-    transition: all 200ms ease-in;
+    transition: all 300ms ease-in;
     transform: scale(1.2); }
   .img-flex div.overley {
-    color: transparent;
     background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    color: transparent; }
     .img-flex div.overley:hover {
-      color: #CEE1E6;
-      background-color: rgba(0, 0, 0, 0.7); }
+      color: white;
+      background-color: rgba(32, 103, 118, 0.9); }
 
 #contact {
   background-image: url("../img/img_2.jpg");
@@ -318,17 +319,18 @@ div.modal {
     left: 10px; }
     div.modal span:hover {
       color: #91D4DA; }
-  div.modal div.modal-content h4 {
-    color: #18374C; }
-  div.modal div.modal-footer {
-    border: none !important;
-    display: flex;
-    justify-content: center; }
-    div.modal div.modal-footer a {
+  div.modal div.modal-content {
+    padding: 0 20px; }
+    div.modal div.modal-content h4 {
+      color: #18374C; }
+    div.modal div.modal-content a {
+      font-family: "Josefin Sans", sans-serif;
       border-radius: 20px;
       background-color: #206776;
-      color: #CEE1E6; }
-      div.modal div.modal-footer a:hover {
+      color: #CEE1E6;
+      font-size: 0.8rem;
+      margin-left: 10px; }
+      div.modal div.modal-content a:hover {
         color: #18374C;
         background-color: #91D4DA; }
 
@@ -393,8 +395,6 @@ svg {
     .menu-expanded nav a {
       font-size: 2.5rem; }
 
-  #skills h5 {
-    text-align: justify; }
   #skills div.collapsible-header {
     font-size: 0.8em; }
   #skills i {
@@ -403,7 +403,8 @@ svg {
     font-size: 1em; }
 
   #modal1, #modal2, #modal3, #modal4, #modal5, #modal6 {
-    width: 80%; }
+    width: 80%;
+    max-height: 55%; }
     #modal1 .btn, #modal2 .btn, #modal3 .btn, #modal4 .btn, #modal5 .btn, #modal6 .btn {
       font-size: 0.8rem;
       margin: 2%; }
