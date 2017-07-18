@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?jhhep7');
-  src:  url('fonts/icomoon.eot?jhhep7#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?jhhep7') format('truetype'),
-    url('fonts/icomoon.woff?jhhep7') format('woff'),
-    url('fonts/icomoon.svg?jhhep7#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?m82o0o');
+  src:  url('fonts/icomoon.eot?m82o0o#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?m82o0o') format('truetype'),
+    url('fonts/icomoon.woff?m82o0o') format('woff'),
+    url('fonts/icomoon.svg?m82o0o#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -64,8 +64,17 @@
   content: "\e904";
   color: #f7df1e;
 }
-.icon-minus:before {
+.icon-weather:before {
   content: "\e905";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-html-five:before {
+  content: "\eae4";
+}
+.icon-css3:before {
+  content: "\eae6";
 }
 .icon-laptop:before {
   content: "\e001";
@@ -115,6 +124,12 @@
 .icon-download:before {
   content: "\e04d";
 }
+.icon-target:before {
+  content: "\e04e";
+}
+.icon-piechart:before {
+  content: "\e050";
+}
 .icon-refresh:before {
   content: "\e05a";
 }
@@ -126,13 +141,4 @@
 }
 .icon-linkedin:before {
   content: "\e062";
-}
-.icon-github:before {
-  content: "\f09b";
-}
-.icon-html-five:before {
-  content: "\eae4";
-}
-.icon-css3:before {
-  content: "\eae6";
 }

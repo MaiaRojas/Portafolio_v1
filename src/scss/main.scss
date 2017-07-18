@@ -54,6 +54,12 @@ p{
   bottom: 0;
   background-color: rgba(0,0,0,0.7);
 }
+.flex-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 nav{
   background-color: transparent;
   height: 40px;
@@ -191,10 +197,9 @@ nav{
       }
     }
   }
-}
+ }
 //Css para About
 #about{
-   height: 100vh;
    padding: 3% 0;
    div.who{
      h2{
@@ -220,8 +225,9 @@ nav{
  }
 // Css para Skill
 #skills{
+  position: relative;
   margin-top: 3%;
-  height: 120vh;
+  height: 750px;
   div.parallax-container{
     height: 100%;
     width: 100%;
@@ -247,7 +253,7 @@ nav{
       }
       div.collapsible-body{
         font-family: $font-body_base ;
-        padding: 1rem;
+        padding: 0.2rem;
         color:$gray-lighter;
         border: 1px solid $gray-dark;
         border-radius: 5px;
@@ -262,13 +268,19 @@ nav{
 }
 //Css para Work
 #work{
+  padding: 5% 0;
+
   h2{
     color:$gray-dark;
   }
   div.works{
     a.portfolio-link{
+
       div#show-hover{
-         padding: 0.3rem .75rem !important;
+         padding: 0;
+         height: 300px;
+         overflow: hidden;
+
         h4{
           font-family: $font-anuncio;
         }
@@ -302,12 +314,33 @@ nav{
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
+
+  &:hover{
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
+  }
+  div.overley{
+    color: transparent;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     &:hover{
-      color: white;
+      color: $gray-lighter;
+      background-color: rgba(0,0,0,0.7);
+    }
   }
 }
 #contact{
-  height: 70vh;
+  height: 350px;
   color: $gray-lighter;
   h2{
     color:$gray-lighter;;
@@ -323,6 +356,22 @@ nav{
       background-repeat: no-repeat;
       background-size: cover;
       z-index: 0;
+      div.font_principal{
+        span{
+          font-size: 1.2rem;
+        }
+      }
+      div.cv-button{
+        a{
+           background-color: white;
+           border-radius: 20px;
+           color: $gray-dark;
+          &:hover{
+            background-color: $gray-dark;
+            color: $gray-lighter;
+          }
+        }
+      }
     }
   }
 }
@@ -331,6 +380,10 @@ footer{
   color: $gray-lighter;
   div.row{
     margin-bottom: 0px;
+    p{
+      font-size: 0.8rem;
+      margin: 0;
+    }
   }
 }
 //Css para modal
@@ -397,14 +450,13 @@ svg {
   }
 
 $max: 5;
-$stroke-step: 7%;
+$stroke-step: 10%;
 .text-copy {
   fill: none;
   stroke: white;
   stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
   stroke-width: 3px;
-
-  animation: stroke-offset 4s infinite linear;
+  animation: stroke-offset 6s infinite linear;
 
   @for $item from 1 through $max {
     $stroke-color: nth($colors, $item);
@@ -428,6 +480,11 @@ $stroke-step: 7%;
   html,body{
     font-size: 14px;
   }
+  #profile{
+    svg{
+      width: 85%;
+    }
+  }
   .menu-expanded{
     nav{
       line-height: 3;
@@ -437,9 +494,15 @@ $stroke-step: 7%;
     }
   }
   #skills{
-    height: 120vh;
-  }
-  #contact{
-    height: 40vh;
+    height: 140vh;
+    div.collapsible-header {
+      font-size: 0.8em;
+    }
+    i{
+      display: none;
+    }
+    p{
+      font-size: 1em;
+    }
   }
 }
