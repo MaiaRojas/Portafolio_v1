@@ -395,6 +395,9 @@ footer{
    top: 20% !important;
    max-height: 50%;
    width: 50%;
+   p{
+     font-size: 0.9em;
+   }
    span{
     font-size: 2rem;
     color: $gray-dark;

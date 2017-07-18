@@ -314,6 +314,8 @@ div.modal {
   top: 20% !important;
   max-height: 50%;
   width: 50%; }
+  div.modal p {
+    font-size: 0.9em; }
   div.modal span {
     font-size: 2rem;
     color: #206776;
