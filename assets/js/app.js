@@ -1,4 +1,4 @@
-'use strict';
+  'use strict';
 $(document).ready(function(){
   $('#modal1').modal({
      dismissible: false,

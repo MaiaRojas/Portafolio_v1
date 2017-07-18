@@ -221,13 +221,14 @@ nav{
   }
   p{
     color: $gray-darker;
+    text-align: justify;
   }
  }
 // Css para Skill
 #skills{
   position: relative;
   margin-top: 3%;
-  height: 750px;
+  height: 700px;
   div.parallax-container{
     height: 100%;
     width: 100%;
@@ -258,6 +259,9 @@ nav{
         border: 1px solid $gray-dark;
         border-radius: 5px;
         background-color:rgba(0,0,0,0.7);
+        p{
+          margin: 0;
+        }
       }
     }
   }
@@ -438,7 +442,12 @@ footer{
    color: $gray-darker ;
    background-color: $gray-light;
    }
+   .tooltipped{
+    color: $gray-light ;
+
+   }
  }
+
 
 //Css para Maia Rojas
 $colors: $gray-darker ,$gray-dark ,$gray,$gray-light, $gray-lighter;
@@ -459,7 +468,7 @@ $stroke-step: 10%;
   stroke: white;
   stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
   stroke-width: 3px;
-  animation: stroke-offset 6s infinite linear;
+  animation: stroke-offset 8s infinite linear;
 
   @for $item from 1 through $max {
     $stroke-color: nth($colors, $item);
@@ -474,7 +483,7 @@ $stroke-step: 10%;
 @keyframes stroke-offset {
   50% {
     stroke-dashoffset: $stroke-step * $max;
-    stroke-dasharray: 0 $stroke-step * $max*2.5;
+    // stroke-dasharray: 0 $stroke-step * $max*2.5;
   }
 }
 
@@ -497,7 +506,10 @@ $stroke-step: 10%;
     }
   }
   #skills{
-    height: 140vh;
+    min-height: 1000px;
+    h5{
+      text-align: justify;
+    }
     div.collapsible-header {
       font-size: 0.8em;
     }
@@ -506,6 +518,16 @@ $stroke-step: 10%;
     }
     p{
       font-size: 1em;
+    }
+  }
+  #modal1,#modal2 , #modal3, #modal4, #modal5 , #modal6{
+    width: 80%;
+    .btn{
+      font-size: 0.8rem;
+      margin: 2%;
+      i{
+        font-size: 0.8rem;
+      }
     }
   }
 }
