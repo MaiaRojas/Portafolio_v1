@@ -1,4 +1,4 @@
-'use strict';
+  'use strict';
 $(document).ready(function(){
   $('#modal1').modal({
      dismissible: false,
@@ -37,5 +37,6 @@ $(document).ready(function(){
      $(this).toggleClass("menu-expanded");
      $('.redes').toggleClass("hide");
    });
+
 
  });
