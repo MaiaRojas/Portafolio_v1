@@ -17,6 +17,9 @@ h4 {
 h5 {
   font-size: 1.6em; }
 
+h6 {
+  font-size: 1.2em; }
+
 p {
   font-size: 1.2em; }
 
@@ -52,7 +55,6 @@ p {
 
 .flex-center {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center; }
 
@@ -126,6 +128,8 @@ nav {
       .menu-expanded nav ul li {
         float: none;
         margin: 1% 0; }
+        .menu-expanded nav ul li h6 {
+          display: inline-block; }
         .menu-expanded nav ul li i {
           display: inline-block;
           margin-right: 1%;
@@ -224,7 +228,7 @@ nav {
 
 #work {
   padding: 60px 0; }
-  #work h2 {
+  #work h2, #work h5 {
     color: #206776; }
   #work div.works a.portfolio-link div#show-hover {
     padding: 0;
@@ -408,10 +412,11 @@ svg {
       font-size: 2.5rem; }
 
   #skills div.collapsible-header {
-    font-size: 0.8em; }
-  #skills i {
-    display: none; }
-  #skills p {
+    font-size: 0.8em;
+    text-align: center; }
+    #skills div.collapsible-header i {
+      display: none; }
+  #skills div.collapsible-body p {
     font-size: 1em; }
 
   #modal1, #modal2, #modal3, #modal4, #modal5, #modal6 {
@@ -422,5 +427,14 @@ svg {
       margin: 2%; }
       #modal1 .btn i, #modal2 .btn i, #modal3 .btn i, #modal4 .btn i, #modal5 .btn i, #modal6 .btn i {
         font-size: 0.8rem; } }
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  #skills div.collapsible-header {
+    font-size: 0.8em;
+    min-height: 2.7rem;
+    line-height: 2.1rem; }
+    #skills div.collapsible-header i {
+      margin-right: 0; }
+  #skills div.collapsible-body p {
+    font-size: 1em; } }
 
 /*# sourceMappingURL=main.css.map */

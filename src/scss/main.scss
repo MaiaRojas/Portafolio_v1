@@ -20,6 +20,9 @@ h4{
 h5{
   font-size: 1.6em;
 }
+h6{
+  font-size: 1.2em;
+}
 p{
   font-size: 1.2em;
 }
@@ -55,7 +58,6 @@ p{
 }
 .flex-center{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -135,6 +137,9 @@ nav{
         li{
           float: none;
           margin: 1% 0;
+          h6{
+            display: inline-block;
+          }
           i{
             display: inline-block;
             margin-right: 1%;
@@ -262,7 +267,7 @@ nav{
 //Css para Work
  #work{
   padding: 60px 0;
-  h2{
+  h2 , h5{
     color:$gray-dark;
   }
   div.works{
@@ -513,12 +518,15 @@ $stroke-step: 10%;
   #skills{
     div.collapsible-header {
       font-size: 0.8em;
+      text-align: center;
+      i{
+        display: none;
+      }
     }
-    i{
-      display: none;
-    }
-    p{
-      font-size: 1em;
+    div.collapsible-body{
+      p{
+        font-size: 1em;
+      }
     }
   }
   #modal1 , #modal2 , #modal3, #modal4, #modal5 , #modal6{
@@ -529,6 +537,24 @@ $stroke-step: 10%;
       margin: 2%;
       i{
         font-size: 0.8rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 601px) and (max-width:900px) {
+  #skills{
+    div.collapsible-header {
+      font-size: 0.8em;
+      min-height: 2.7rem;
+      line-height: 2.1rem;
+      i{
+        margin-right: 0;
+        // font-size:
+      }
+    }
+    div.collapsible-body{
+      p{
+        font-size: 1em;
       }
     }
   }
