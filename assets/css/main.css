@@ -168,10 +168,15 @@ nav {
     font-family: "Josefin Slab", serif; }
     #profile div.container div.intro-text {
       height: 100%; }
+      #profile div.container div.intro-text div.coder {
+        font-size: 1.4rem;
+        position: absolute;
+        bottom: 10%;
+        left: 38%; }
       #profile div.container div.intro-text a {
         position: absolute;
         bottom: 5%;
-        left: 50%; }
+        left: 49%; }
       #profile div.container div.intro-text a.btn-floating i {
         border-radius: 50%; }
 
@@ -209,6 +214,7 @@ nav {
           background-color: #CEE1E6;
           color: #18374C; }
       #skills div.bg-opacity-skills div.row div.collapsible-body {
+        text-align: justify;
         font-family: "Josefin Sans", sans-serif;
         padding: 0.5rem;
         color: #CEE1E6;
@@ -389,6 +395,12 @@ svg {
 
   #profile svg {
     width: 85%; }
+  #profile div.container div.intro-text div.coder {
+    bottom: 15%;
+    left: 15%; }
+  #profile div.container div.intro-text a {
+    bottom: 5%;
+    left: 42%; }
 
   .menu-expanded nav {
     line-height: 3; }

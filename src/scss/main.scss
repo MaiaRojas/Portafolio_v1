@@ -4,7 +4,6 @@
 html , body{
   margin: 0;
   padding: 0;
-  // background: hsl(200,70,11);
   background-size: .12em 50%;
   font-size: 18px;
 }
@@ -189,11 +188,17 @@ nav{
     font-size:   4em;
     font-family: $font-title_secundary;
     div.intro-text{
+      div.coder{
+        font-size: 1.4rem;
+        position: absolute;
+        bottom: 10%;
+        left:38%;
+      }
       height: 100%;
       a{
         position: absolute;
         bottom: 5%;
-        left: 50%;
+        left: 49%;
       }
       a.btn-floating i {
         border-radius: 50%;
@@ -243,6 +248,7 @@ nav{
            }
         }
         div.collapsible-body{
+          text-align: justify;
           font-family: $font-body_base ;
           padding: 0.5rem;
           color:$gray-lighter;
@@ -482,6 +488,18 @@ $stroke-step: 10%;
   #profile{
     svg{
       width: 85%;
+    }
+    div.container{
+      div.intro-text{
+        div.coder{
+          bottom: 15%;
+          left:15%;
+        }
+        a{
+          bottom: 5%;
+          left:42%;
+        }
+      }
     }
   }
   .menu-expanded{
