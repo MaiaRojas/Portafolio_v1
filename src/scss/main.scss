@@ -137,30 +137,34 @@ nav{
         li{
           float: none;
           margin: 1% 0;
-          h6{
-            display: inline-block;
-          }
-          i{
-            display: inline-block;
-            margin-right: 1%;
-            font-size: 40px;
+          a {
+             font-family: $font-anuncio;
+             transition: all .15s;
+             text-decoration: none;
+             font-size: 3.5em;
+             padding: 5px;
+             color: #fff;
+             display:block;
+             div.row {
+               margin-bottom: 0px;
+               h6{
+                 display: inline-block;
+               }
+               i{
+                 display: inline-block;
+                 margin-right: 1%;
+                 font-size: 40px;
+               }
+             }
+            &:hover {
+                  font-family: $font-title_base;
+                  transition: all .15s;
+                 //  letter-spacing: 2px;
+            }
           }
         }
      }
-     a {
-        font-family: $font-anuncio;
-        transition: all .15s;
-        text-decoration: none;
-        font-size: 3.5em;
-        padding: 5px;
-        color: #fff;
-        display:block;
-          &:hover {
-             font-family: $font-title_base;
-             transition: all .15s;
-             letter-spacing: 2px;
-          }
-     }
+
    }
    .bar {
       background-color: transparent;
@@ -541,6 +545,10 @@ $stroke-step: 10%;
     }
   }
 }
+.hidden{
+  display: none;
+}
+
 @media only screen and (min-width: 601px) and (max-width:900px) {
   #skills{
     div.collapsible-header {
