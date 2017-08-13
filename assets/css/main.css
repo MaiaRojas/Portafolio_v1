@@ -128,24 +128,25 @@ nav {
       .menu-expanded nav ul li {
         float: none;
         margin: 1% 0; }
-        .menu-expanded nav ul li h6 {
-          display: inline-block; }
-        .menu-expanded nav ul li i {
-          display: inline-block;
-          margin-right: 1%;
-          font-size: 40px; }
-    .menu-expanded nav a {
-      font-family: "Fredericka the Great", cursive;
-      transition: all .15s;
-      text-decoration: none;
-      font-size: 3.5em;
-      padding: 5px;
-      color: #fff;
-      display: block; }
-      .menu-expanded nav a:hover {
-        font-family: "Abril Fatface", cursive;
-        transition: all .15s;
-        letter-spacing: 2px; }
+        .menu-expanded nav ul li a {
+          font-family: "Fredericka the Great", cursive;
+          transition: all .15s;
+          text-decoration: none;
+          font-size: 3.5em;
+          padding: 5px;
+          color: #fff;
+          display: block; }
+          .menu-expanded nav ul li a div.row {
+            margin-bottom: 0px; }
+            .menu-expanded nav ul li a div.row h6 {
+              display: inline-block; }
+            .menu-expanded nav ul li a div.row i {
+              display: inline-block;
+              margin-right: 1%;
+              font-size: 40px; }
+          .menu-expanded nav ul li a:hover {
+            font-family: "Abril Fatface", cursive;
+            transition: all .15s; }
   .menu-expanded .bar {
     background-color: transparent;
     transition: all .25s; }
