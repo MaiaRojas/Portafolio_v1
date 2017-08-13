@@ -267,7 +267,7 @@ nav {
     transition: all 300ms ease-in;
     transform: scale(1.2); }
   .img-flex div.overley {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -427,6 +427,9 @@ svg {
       margin: 2%; }
       #modal1 .btn i, #modal2 .btn i, #modal3 .btn i, #modal4 .btn i, #modal5 .btn i, #modal6 .btn i {
         font-size: 0.8rem; } }
+.hidden {
+  display: none; }
+
 @media only screen and (min-width: 601px) and (max-width: 900px) {
   #skills div.collapsible-header {
     font-size: 0.8em;
