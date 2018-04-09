@@ -1,7 +1,6 @@
-# Vegan
+# CINELA
+ CINELA  es una  aplicación web dirigida  a los amantes  del cine, en ella podran filtrar informacion complementaria sobre el desarrolo de  una pelicula, como el de director, actores, entre otros.
 
-Se detalla los trabajos realizados en el bootcamp.
-
-![](https://user-images.githubusercontent.com/25912510/35811427-73c88548-0a5c-11e8-9fdf-5075d1ce8149.png)
-
-## Desarrollado para: [Laboratoria](http://laboratoria.la)
+![Foodmap-preview](https://github.com/mirelatv/Portafolio/blob/master/assets/images/cinela.png)
+## Desarrollado para 
+[Laboratoria](http://laboratoria.la)
